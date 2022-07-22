@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Grasshopper Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jul 17, 2022 04:54:41 PM</span></a>
+<a href="#"><span class="badge badge-primary">Jul 22, 2022 02:47:21 PM</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jul 17, 2022 04:54:41 PM</h3>
+<h3>Jul 22, 2022 02:47:21 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jul 17, 2022 04:55:23 PM</h3>
+<h3>Jul 22, 2022 02:48:35 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -143,10 +143,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='85%'><b>12</b> steps passed</small></div>
+<div><small data-tooltip='71%'><b>10</b> steps passed</small></div>
 <div>
 <small data-tooltip='7%'><b>1</b> steps failed,
-<b>1</b> skipped, <b data-tooltip='%'>0</b> others
+<b>3</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"Login page feature":40.265
+"Login page feature":73.253
 };
 </script>
 <div class="row">
@@ -173,16 +173,16 @@ var timeline = {
 <thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
 <tbody>
 <tr>
-<td>AppName</td>
-<td>AutomationPractice</td>
+<td>build</td>
+<td>1.1</td>
 </tr>
 <tr>
 <td>user</td>
 <td>Satish</td>
 </tr>
 <tr>
-<td>build</td>
-<td>1.1</td>
+<td>AppName</td>
+<td>AutomationPractice</td>
 </tr>
 <tr>
 <td>os</td>
@@ -208,10 +208,10 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 12,
+passGrandChild: 10,
 failGrandChild: 1,
 warningGrandChild: 0,
-skipGrandChild: 1,
+skipGrandChild: 3,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -240,7 +240,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Login page feature</p>
             <p class="text-sm">
-              <span>16:54:43 PM</span> / <span>00:00:40:265</span>
+              <span>14:47:22 PM</span> / <span>00:01:13:253</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -249,9 +249,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Login page feature</h5>
-<span class='badge badge-success'>07.17.2022 16:54:43</span>
-<span class='badge badge-danger'>07.17.2022 16:55:23</span>
-<span class='badge badge-default'>00:00:40:265</span>
+<span class='badge badge-success'>07.22.2022 14:47:22</span>
+<span class='badge badge-danger'>07.22.2022 14:48:35</span>
+<span class='badge badge-default'>00:01:13:253</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -338,31 +338,21 @@ eventsCount: 5,
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_clicks_on_login_button()">
+              <div class="step fail-bg" title="stepDefinitions.LoginPageSteps.user_clicks_on_login_button()">
                 <span>And user clicks on Login button</span>
       <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.LoginPageSteps.user_gets_the_logout_link_on_the_page()">
-                <span>Then user gets the logout link on the page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step fail-bg" title="stepDefinitions.LoginPageSteps.user_click_on_logout_link()">
-                <span>And user click on logout link</span>
-      <div>
         <textarea disabled class="code-block">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=103.0.5060.114)
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.134)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-C4DMSED', ip: '192.168.43.180', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+System info: host: 'DESKTOP-C4DMSED', ip: '192.168.43.180', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54660}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 4714d56df703379e18bab60fb840d5fe
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57804}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5d534420f6673e27c49e7086b5d392cb
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -371,17 +361,27 @@ Session ID: 4714d56df703379e18bab60fb840d5fe
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy21.click(Unknown Source)
-	at objectRepositories.RediffLoginPageOR.clickLogoutLink(RediffLoginPageOR.java:52)
-	at stepDefinitions.LoginPageSteps.user_click_on_logout_link(LoginPageSteps.java:67)
-	at ✽.user click on logout link(file:///E:/RediffAppAutomation/src/test/resources/HomePage.feature:20)
+	at com.sun.proxy.$Proxy19.click(Unknown Source)
+	at objectRepositories.RediffLoginPageOR.clickOnLogin(RediffLoginPageOR.java:64)
+	at stepDefinitions.LoginPageSteps.user_clicks_on_login_button(LoginPageSteps.java:57)
+	at ?.user clicks on Login button(file:///E:/RediffAppAutomation/src/test/resources/HomePage.feature:18)
 </textarea>
       
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.LoginPageSteps.user_gets_the_logout_link_on_the_page()">
+                <span>Then user gets the logout link on the page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.LoginPageSteps.user_click_on_logout_link()">
+                <span>And user click on logout link</span>
+      <div>Step skipped
       </div>
               </div>
               <div class="step skip-bg" title="stepDefinitions.LoginPageSteps.close_the_browser()">
@@ -436,11 +436,11 @@ Session ID: 4714d56df703379e18bab60fb840d5fe
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>16:55:04 PM</td>
+<td>14:48:26 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='17'>And user click on logout link</a>
+<a href="#" class="linked" test-id='1' id='15'>And user clicks on Login button</a>
 <div class="">
-<span class="badge badge-default">Login page feature.Login with correct credentials.And user click on logout link</span>
+<span class="badge badge-default">Login page feature.Login with correct credentials.And user clicks on Login button</span>
 </div>
 </td>
 </tr>
