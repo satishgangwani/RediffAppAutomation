@@ -10,6 +10,9 @@ import io.cucumber.junit.CucumberOptions;
 		features = {"src/test/resources/"},
 		glue = {"stepDefinitions"},
 		plugin = {"pretty",
+				"json:target/MyReports/report.json",
+				 "junit:target/MyReports/report.xml",
+				 "html:target/MyReports/report.html",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
 		monochrome = true
 		)
